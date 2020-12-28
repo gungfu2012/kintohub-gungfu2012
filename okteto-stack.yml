@@ -1,0 +1,12 @@
+name: v2-app
+services:
+  vote:
+    public: true
+    image: okteto.dev/v2
+    build: v2
+    replicas: 1
+    ports:
+      - 8080
+    resources:
+      cpu: 100m
+      memory: 256Mi
